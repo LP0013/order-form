@@ -240,7 +240,7 @@ form > input {
     width: 100%;
 }
 
-#zip {
+.zip {
     /* margin-left: 25px; */
     width: 100%;
 }
@@ -313,4 +313,10 @@ span.slide-title-btn {
 .cvv {
     display: flex;
     justify-content: space-between;
+}
+.locationIcon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
 }
