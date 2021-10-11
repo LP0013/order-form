@@ -90,6 +90,7 @@ window.onload = function () {
                 option.textContent = country;
                 sel[0].append(option);
             }
+            sel[1].innerHTML = sel[0].innerHTML;
         }
     };
     xml.send();

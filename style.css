@@ -68,7 +68,7 @@ body {
     width: 10px;
 }
 
-.window-nav a {
+.window-nav span {
     text-decoration: none;
     color: #979797;
     font-weight: 300;
