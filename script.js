@@ -78,7 +78,7 @@ function showPosition(position) {
 
 window.onload = function () {
     var xml = new XMLHttpRequest();
-    xml.open("get", 'http://api.first.org/data/v1/countries', true);
+    xml.open("get", 'https://api.first.org/data/v1/countries', true);
     xml.onload = function () {
         if (xml.readyState === 4 && xml.status === 200) {
             var sel = document.querySelectorAll("[name = shippingCountry], [name = billingCountry]")
