@@ -78,13 +78,13 @@ function showPosition(position) {
 
 window.onload = function () {
     var xml = new XMLHttpRequest();
-    xml.open("get", 'https://api.first.org/data/v1/countries', true);
+    xml.open("get", 'countries.json', true);
     xml.onload = function () {
         if (xml.readyState === 4 && xml.status === 200) {
             var sel = document.querySelectorAll("[name = shippingCountry], [name = billingCountry]")
             var res = JSON.parse(xml.response);
-            for (var key in res.data) {
-                var country = res.data[key].country;
+            for (var key in res) {
+                var country = res[key];
                 var option = document.createElement("option");
                 option.value = country;
                 option.textContent = country;
